@@ -101,12 +101,6 @@ table.centrada {
   margin-right:15%;
 }
 
-table.centrada-2 {
-  width:40%; 
-  margin-left:30%; 
-  margin-right:30%;
-}
-
 .sidebar {
   width: 350px;
   font-family: 'Bellota-Regular', sans-serif ;
@@ -155,7 +149,6 @@ table.centrada-2 {
   background-clip: text;    
 }
 
-
 .burger {        
   background: linear-gradient(90deg, rgb(39, 39, 39), white, rgb(39, 39, 39));    
   font-size: 4rem;    
@@ -178,8 +171,7 @@ table.centrada-2 {
 }
 
 .sidebar-item::after{
-  font-family: 'Bellota-Regular', sans-serif ;
-  font-size: 1rem;  
+  font-family: 'Bellota-Regular', sans-serif ;  
   display:block;
   content: '';
   border-bottom: solid 2px #c0ad98;  
@@ -207,12 +199,17 @@ table.centrada-2 {
   width: 10%;    
 }
 
+table.centrada-2 {
+  width:40%; 
+  margin-left:30%; 
+  margin-right:30%;
+}
+
 .barra-sobre-imagen-excelencia {
   position: relative;
   bottom: 0px;
   width: 100%;
-  height: 15% ;
-  /*background-color: #3c342c;*/
+  height: 15% ;  
   opacity: 0.8;
   border: 0px solid transparent;
   background-image: linear-gradient(0.25turn, #25201c,#937f6b, #25201c);    
@@ -233,6 +230,12 @@ table.centrada-2 {
 .texto-buscamos-1 {
   font-family: 'Bellota-Light', sans-serif ;  
   color: white;
+  padding-left: 100px;
+}
+
+.guion-excelencia {
+  padding-left: 100px; 
+  padding-top:20px;
 }
 
 .grupoexcelencia {
@@ -420,10 +423,6 @@ table.centrada-2 {
   background-clip: text;
 }
 
-.sombra {
-  box-shadow: 10px 10px 10px rgb(139, 137, 137) !important;
-}
-
 .zoom {
   transition: transform .8s; 
 }
@@ -445,7 +444,7 @@ table.centrada-2 {
       top: 0%;
       left: 0%;
       width: 100% !important;
-      height: 18% !important;        
+      height: 20% !important;        
     }
 
     .logo-sobre-imagen {
@@ -454,71 +453,98 @@ table.centrada-2 {
       left: 4%;
       width:75%;
       height: auto;
-  }
+    }
 
-  .logo {
-    width: 50%;
-  }
+    .logo {
+      width: 50%;
+    }
 
-  .sidebar {
-    width: 350px;
-  }
-  
-  .sidebar-burger {
-    font-size: 1.2rem; 
-  }
-  
-  .flecha-sidebar {
-    font-size: 1.8rem;
-  }
-  
-  .flecha-sidebar:hover {    
-    font-size: 1.8rem;   
-   
-  }
-  
-  .burger {      
+    .sidebar {
+      width: 350px;
+    }
+    
+    .sidebar-burger {
+      font-size: 1.2rem; 
+    }
+    
+    .flecha-sidebar {
       font-size: 1.8rem;
-  }
+    }
+    
+    .flecha-sidebar:hover {    
+      font-size: 1.8rem;   
+    
+    }
+    
+    .burger {      
+        font-size: 1.8rem;
+    }
 
-  .burger:hover { 
-    font-size: 1.8rem; 
-  }
+    .burger:hover { 
+      font-size: 1.8rem; 
+    }
 
-  .letras-sobre-imagen-home {
-    font-size: 1rem;
-    line-height: 1.2;
-    letter-spacing: 1px;
-  }
-  
-  .posicion-1 {
-    position: absolute;
-    top: 50%;
-    left: 55%; 
-    color:rgb(51, 50, 50);     
-  }
-  
-  .posicion-2 {
-    position: absolute;
-    top: 61%;
-    left: 12%;    
-    color:rgb(51, 50, 50);    
-  }
-  
-  .posicion-3 {
-    position: absolute;
-    top: 50%;
-    left: 58%; 
-    color:rgb(51, 50, 50);       
-  }
-  
-  .posicion-4 {
-    position: absolute;
-    top: 47%;    
-    color: white;    
-  }
+    .sidebar-item {
+      font-size: 0.8rem;  
+    }
 
+    .letras-sobre-imagen-home {
+      font-size: 1rem;
+      line-height: 1.2;
+      letter-spacing: 1px;
+    }
+      
+    .posicion-2 {
+      position: absolute;
+      top: 61%;
+      left: 12%;    
+      color: white;  
+    }
+    
+    .posicion-3 {
+      position: absolute;
+      top: 50%;
+      left: 58%; 
+      color:rgb(51, 50, 50);       
+    }
+    
+    .posicion-4 {
+      position: absolute;
+      top: 47%;    
+      color: white;    
+    }
 
+    .logo-excelencia {
+      width: 20%;    
+    }
+
+    .texto-buscamos-1 {
+      font-family: 'Bellota-Light', sans-serif ;  
+      color: white;
+      padding-left: 30px;
+    }
+    
+    .guion-excelencia {
+      padding-left: 30px; 
+      padding-top:20px;
+    }
+
+    .texto-promesa {      
+      padding-left: 8%;
+      padding-right: 8%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+
+    .texto-degrade {
+      background: linear-gradient(90deg, rgb(39, 39, 39), white, rgb(39, 39, 39));
+      font-family: 'Bellota-Regular', sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: 5px;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
 
 }
 
