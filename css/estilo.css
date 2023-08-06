@@ -238,21 +238,47 @@ table.centrada-2 {
   padding-top:20px;
 }
 
-.grupoexcelencia {
+.trayectoria {
   background-image: url('../images/home/fondoGE.jpg');
-  background-size: cover;
+  background-size: cover ;
 }
 
-.texto-grupoexcelencia-1 {
+.texto-trayectoria-1 {
   color:#000;
   font-family: 'Bellota-Bold-Italic', sans-serif ;
-  line-height: 1.5;        
+  line-height: 1.5;   
+  padding-top: 15%;       
 }
 
-.texto-grupoexcelencia-2 {
+.texto-trayectoria-2 {
   color:#000;
   font-family: 'Bellota-Bold', sans-serif ;
   line-height: 1.5;        
+}
+
+.texto-trayectoria-3 {
+  color:#000;
+  font-family: 'Bellota-Bold-Italic', sans-serif ;
+  line-height: 1.5; 
+}
+
+.logos-trayectoria {
+  padding-top: 60px; 
+  padding-bottom: 60px; 
+  display: flex; 
+  justify-content: space-between; 
+  margin-left: 30%; 
+  margin-right: 30%;            
+}
+
+.cada-logo {
+  width:120px; 
+  height: 120px;
+}
+
+.logo-remax {
+  width:200px; 
+  height: 120px;
 }
 
 .equipoejecutivo {
@@ -531,11 +557,92 @@ table.centrada-2 {
     }
 
     .texto-promesa {      
-      padding-left: 8%;
-      padding-right: 8%;
+      padding-left: 10%;
+      padding-right: 10%;
       padding-top: 5%;
       padding-bottom: 5%;
     }
+
+    .trayectoria {
+      background-image: url('../images/home/fondoGE_mobile.jpg');
+      /*background-size: cover ;*/
+      width: 100%;
+    }
+
+    .texto-trayectoria-1 {      
+      padding-top: 35%;     
+      padding-left: 8%;
+      padding-right: 8%;
+    }  
+
+    .texto-trayectoria-2 {      
+      padding-left: 8%;
+      padding-right: 8%;  
+    } 
+    
+    .texto-trayectoria-3 {      
+      padding-left: 8%;
+      padding-right: 8%;  
+    } 
+
+    .logos-trayectoria {
+      padding-top: 60px; 
+      padding-bottom: 60px; 
+      display: flex; 
+      justify-content: space-between; 
+      margin-left: 8%; 
+      margin-right: 8%;            
+    }
+    
+    .cada-logo {
+      width:90px; 
+      height: 90px;
+    }
+    
+    .logo-remax {
+      width:140px; 
+      height: 90px;
+    }
+
+    .texto-equipo {
+      font-size: 1rem;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
+
+    .linea-iconos-contacto {
+      position: relative; 
+      display: inline-block;
+      top: 35%; 
+      padding-bottom: 10%; 
+      left: 0px;
+      text-align: center;
+      color: white; 
+      font-size: 4rem; 
+      letter-spacing: 80px;
+      width:100%;
+    }
+    
+    .icono-contacto {
+      width:24px;
+      height: auto;
+    }
+    
+    .icono-contacto-mediano {
+      width: 36px;
+      height: auto;
+    }
+    
+    .icono-contacto-grande {
+      width: 40px;
+      height: auto;
+    }
+
+    .texto-contacto {
+      font-size: 0rem;   
+  }
 
     .texto-degrade {
       background: linear-gradient(90deg, rgb(39, 39, 39), white, rgb(39, 39, 39));
