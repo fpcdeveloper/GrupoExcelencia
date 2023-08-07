@@ -105,6 +105,10 @@ table.centrada {
   width: 350px;
   font-family: 'Bellota-Regular', sans-serif ;
   opacity: 0.9;
+  display:none; 
+  padding-top:120px; 
+  right:0; 
+  z-index:2
 }
 
 .sidebar-burger {
@@ -514,8 +518,7 @@ table.centrada-2 {
     }
     
     .flecha-sidebar:hover {    
-      font-size: 1.8rem;   
-    
+      font-size: 1.8rem;       
     }
     
     .burger {      
@@ -688,5 +691,173 @@ table.centrada-2 {
       background-clip: text;
     }
 
+}
+
+
+
+/*------------------------ PANTALLA MUY GRANDE -------------------------------------*/
+@media screen and (min-width:1441px) {
+
+    .sidebar-burger {
+      font-size: 3rem; 
+    }
+
+    .burger { 
+      font-size: 6rem;
+    }
+
+    .logo-sobre-imagen {
+      position: absolute;
+      top: 1%;
+      left: 3%;
+      width:30%;
+      height: auto;
+    }
+
+    .logo {
+      width: 120%;      
+    }
+
+    .sidebar {
+      width: 450px;
+      padding-top:220px;
+    }
+
+    .flecha-sidebar {
+      font-size: 3.8rem;
+    }
+    
+    .flecha-sidebar:hover {    
+      font-size: 3.8rem;       
+    }
+
+    .sidebar-item {
+      font-size: 1.6rem;  
+    }
+
+    .letras-sobre-imagen-home {      
+      font-size: 3rem;
+      line-height: 1.2;
+      letter-spacing: 1px;
+    }
+
+        
+    .texto-promesa {  
+      line-height: 2;
+      letter-spacing: 2px;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      font-size: 1.5rem;
+    }
+
+    .texto-buscamos-1 {
+      font-family: 'Bellota-Light', sans-serif ;  
+      color: white;
+      font-size: 1.5rem;
+      padding-left: 10%;
+      padding-top: 10%;
+    }
+
+    .guion-excelencia {
+      padding-left: 10%; 
+      padding-top:5%;
+    }
+
+    .texto-buscamos-2 {
+      font-family: 'Bellota-Light', sans-serif ;  
+      color: white;
+      font-size: 1.5rem;
+      padding-left: 10%;
+      padding-top: 5%;
+    }
+
+    .texto-degrade {
+      font-size: 2.7rem;
+      letter-spacing: 6px;      
+    }
+
+    .texto-trayectoria-1 {      
+      padding-top: 15%;     
+      padding-left: 8%;
+      padding-right: 8%;
+      font-size: 1.8rem;
+    }  
+
+    .texto-trayectoria-2 {      
+      padding-left: 8%;
+      padding-right: 8%;  
+      font-size: 1.8rem;
+    } 
+    
+    .texto-trayectoria-3 {      
+      padding-left: 8%;
+      padding-right: 8%; 
+      font-size: 1.8rem; 
+    } 
+
+    .logos-trayectoria {
+      padding-top: 60px; 
+      padding-bottom: 60px; 
+      display: flex; 
+      justify-content: space-between; 
+      margin-left: 28%; 
+      margin-right: 28%;            
+    }
+    
+    .cada-logo {
+      width:180px; 
+      height: 180px;
+    }
+    
+    .logo-remax {
+      width:280px; 
+      height: 200px;
+    }
+
+    .texto-equipo {
+      font-size: 1.7rem;
+    }
+
+        
+    .icono-contacto {
+      width:40px;
+      height: auto;
+    }
+    
+    .icono-contacto-mediano {
+      width: 50px;
+      height: auto;
+    }
+    
+    .icono-contacto-grande {
+      width: 60px;
+      height: auto;
+    }
+
+    .texto-contacto {
+      font-size: 1.3rem;   
+    }
+
+    .pie {
+      font-size: 1.4rem;
+      padding-top: 0%;
+      padding-bottom: 6%;
+    }
+
+    .pie-titulo {
+      font-size: 1.5rem !important; 
+      letter-spacing: 2px;
+    }
+
+    
+    .pie-grupo {
+      padding-left: 18%;
+      padding-top: 2%;
+    }
+
+    .pie-location {
+      width:90px;
+      height: auto;
+    }
 }
 
