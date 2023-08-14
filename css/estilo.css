@@ -144,8 +144,8 @@ body{
 }
 
 @keyframes mov4-animation {
-  from {top: 47%; color:transparent; font-size: 1.6rem;}
-  to {top: 47%; color: white; font-size: 2rem;}
+  from {top: 47%; color:transparent;}
+  to {top: 47%; color: white;}
 }
 
 
@@ -604,7 +604,6 @@ table.centrada-2 {
       from {top: 64%; color:transparent;}
       to {top: 61%; color: white;}
     }
-
     
     .posicion-3 {
       position: absolute;
@@ -617,11 +616,6 @@ table.centrada-2 {
       position: absolute;
       top: 47%;    
       color: white;    
-    }
-
-    @keyframes mov4-animation {
-      from {top: 47%; color:transparent; font-size: 0.8rem;}
-      to {top: 47%; color: white; font-size: 1rem;}
     }
 
     .logo-excelencia {
