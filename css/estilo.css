@@ -68,6 +68,8 @@ body{
   letter-spacing: 1px;
 }
 
+
+/* la excelencia que nos eleva...*/
 .posicion-1 {
   position: absolute;
   top: 50%;
@@ -75,13 +77,39 @@ body{
   color:rgb(51, 50, 50);     
 }
 
+.mov1 {
+  animation-name: mov1-animation;
+  animation-duration: 3s;
+  animation: mov1-animation 3s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes mov1-animation {
+  from {left: 55%; color:transparent;}
+  to {left: 55%; color: black;}
+}
+
+/* nos conduce a alcanzar */
 .posicion-2 {
   position: absolute;
   top: 61%;
-  left: 12%;    
+  left: 13%;    
   color:rgb(51, 50, 50);    
 }
 
+.mov2 {
+  animation-name: mov2-animation;
+  animation-duration: 4s;
+  animation: mov2-animation 5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes mov2-animation {
+  from {top: 64%; color:transparent;}
+  to {top: 61%; color:black;}
+}
+
+/* nuestros mayores objetivos */
 .posicion-3 {
   position: absolute;
   top: 50%;
@@ -89,11 +117,37 @@ body{
   color:rgb(51, 50, 50);       
 }
 
+.mov3 {
+  animation-name: mov3-animation;
+  animation-duration: 4s;
+  animation: mov3-animation 5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes mov3-animation {
+  from {top: 45%; color:transparent;}
+  to {top: 50%; color:black;}
+}
+
+/* esencia empresarial */
 .posicion-4 {
   position: absolute;
   top: 47%;    
   color: white;    
 }
+
+.mov4 {
+  animation-name: mov4-animation;
+  animation-duration: 3s;
+  animation: mov4-animation 3s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes mov4-animation {
+  from {top: 47%; color:transparent; font-size: 1.6rem;}
+  to {top: 47%; color: white; font-size: 2rem;}
+}
+
 
 table.centrada {
   width:70%; 
@@ -545,6 +599,12 @@ table.centrada-2 {
       left: 12%;    
       color: white;  
     }
+
+    @keyframes mov2-animation {
+      from {top: 64%; color:transparent;}
+      to {top: 61%; color: white;}
+    }
+
     
     .posicion-3 {
       position: absolute;
@@ -557,6 +617,11 @@ table.centrada-2 {
       position: absolute;
       top: 47%;    
       color: white;    
+    }
+
+    @keyframes mov4-animation {
+      from {top: 47%; color:transparent; font-size: 0.8rem;}
+      to {top: 47%; color: white; font-size: 1rem;}
     }
 
     .logo-excelencia {
