@@ -765,6 +765,10 @@ table.centrada-2 {
       font-size: 6rem;
     }
 
+    .burger:hover { 
+      font-size: 6rem; 
+    }
+
     .logo-sobre-imagen {
       position: absolute;
       top: 1%;
