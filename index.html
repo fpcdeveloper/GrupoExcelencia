@@ -23,81 +23,100 @@
 <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
     
     <!-- INICIO HOME -->
-    
-    <!-- MENU SIDEBAR -->
-    <nav class="w3-sidebar w3-black w3-animate-right w3-large sidebar" id="mySidebar">
-        <a href="javascript:void(0)" onclick="closeNav()" 
-            class="w3-button w3-black w3-display-topleft sidebar-flecha zoom" style="padding:10 12px;">
-                <i class="bi bi-chevron-double-right flecha-sidebar"></i>
-        </a>
-        <div class="w3-bar-block w3-left">
-            <a href="#home" class="w3-bar-item w3-button sidebar-item" 
-                    onclick="closeNav()">&nbsp;INICIO
-            </a>      
-            <a href="#somos" class="w3-bar-item w3-button sidebar-item" 
-                    onclick="closeNav()">&nbsp;SOMOS
-            </a>
-            <a href="#trayectoria" class="w3-bar-item w3-button sidebar-item" 
-                    onclick="closeNav()">&nbsp;TRAYECTORIA
-            </a>
-            <a href="#equipoejecutivo" class="w3-bar-item w3-button sidebar-item" 
-                    onclick="closeNav()">&nbsp;EQUIPO
-            </a>
-            <a href="#contacto" class="w3-bar-item w3-button sidebar-item" 
-                    onclick="closeNav()">&nbsp;CONTACTO
-            </a>
-        </div>
-    </nav>  
-       
-    <span class="w3-button w3-top sidebar-burger zoom" onclick="openNav()">
-        <i class="bi bi-list burger"></i>
-    </span> 
-
     <a name="home"></a>
-    <!-- CAROUSEL INICIO -->
-    <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/home/Foto_1.jpg" class="d-block w-100" >
-                <div class="letras-sobre-imagen-home posicion-1 mov1">
-                    LA EXCELENCIA QUE <b>NOS ELEVA...</b>
-                </div>
-                <div class="barra-sobre-imagen"></div>
+    <section>
+        <!-- MENU SIDEBAR -->
+        <nav class="w3-sidebar w3-black w3-animate-right w3-large sidebar" id="mySidebar">
+            <a href="javascript:void(0)" onclick="closeNav()" 
+                class="w3-button w3-black w3-display-topright sidebar-flecha zoom" >
+                    <i class="bi bi-x-lg flecha-sidebar"></i>
+            </a>
+            <div class="w3-bar-block w3-left" style="width: 100%;">
+                <a href="#home" class="w3-bar-item w3-button sidebar-item" 
+                        onclick="closeNav()">&nbsp;INICIO
+                </a>      
+                <a href="#somos" class="w3-bar-item w3-button sidebar-item" 
+                        onclick="closeNav()">&nbsp;SOMOS
+                </a>
+                <a href="#trayectoria" class="w3-bar-item w3-button sidebar-item" 
+                        onclick="closeNav()">&nbsp;TRAYECTORIA
+                </a>
+                <a href="#equipoejecutivo" class="w3-bar-item w3-button sidebar-item" 
+                        onclick="closeNav()">&nbsp;EQUIPO
+                </a>
+                <a href="#contacto" class="w3-bar-item w3-button sidebar-item" 
+                        onclick="closeNav()">&nbsp;CONTACTO
+                </a>
             </div>
-            <div class="carousel-item ">
-                <img src="images/home/Foto_2.jpg" class="d-block w-100">
-                <div class="letras-sobre-imagen-home posicion-2 mov2">
-                    <b>NOS CONDUCE</b> A ALCANZAR...
+        </nav> 
+        <span class="w3-button w3-top sidebar-burger zoom" onclick="openNav()">
+            <i class="bi bi-list burger"></i>
+        </span> 
+        <!-- CAROUSEL INICIO -->
+        <div id="carouselInicio" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"  data-bs-interval="6000">
+                    <div class="barra-sobre-imagen"></div>
+                    <div class="logo-sobre-imagen">
+                        <A href="index.html">
+                        <img src="images/home/logo-barra.png" class="logo"> 
+                        </A>
+                    </div>  
+                    <span class="w3-button w3-top sidebar-burger zoom" onclick="openNav()">
+                        <i class="bi bi-list burger"></i>
+                    </span> 
+                    <img src="images/home/Foto_1.jpg" class="d-block w-100" >
+                    <div class="letras-sobre-imagen-home posicion-1 mov1">
+                        LA EXCELENCIA QUE <b>NOS ELEVA...</b>
+                    </div>                
                 </div>
-                <div class="barra-sobre-imagen"></div>
+                <div class="carousel-item" data-bs-interval="6000">
+                    <div class="barra-sobre-imagen"></div>
+                    <div class="logo-sobre-imagen">
+                        <img src="images/home/logo-barra.png" class="logo"> 
+                    </div>  
+                    <span class="w3-button w3-top sidebar-burger zoom" onclick="openNav()">
+                        <i class="bi bi-list burger"></i>
+                    </span> 
+                    <img src="images/home/Foto_2.jpg" class="imagen-carousel d-block w-100">
+                    <div class="letras-sobre-imagen-home posicion-2 mov2">
+                        <b>NOS CONDUCE</b> A ALCANZAR...
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="6000">
+                    <div class="barra-sobre-imagen"></div>
+                    <div class="logo-sobre-imagen">
+                        <img src="images/home/logo-barra.png" class="logo"> 
+                    </div>    
+                    <span class="w3-button w3-top sidebar-burger zoom" onclick="openNav()">
+                        <i class="bi bi-list burger"></i>
+                    </span> 
+                    <img src="images/home/Foto_3.jpg" class="d-block w-100">
+                    <div class="letras-sobre-imagen-home posicion-3 mov3">
+                        NUESTROS <b>MAYORES OBJETIVOS.</b>
+                    </div>                    
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <div class="barra-sobre-imagen"></div>
+                    <div class="logo-sobre-imagen">
+                        <img src="images/home/logo-barra.png" class="logo">
+                    </div>  
+                    <span class="w3-button w3-top sidebar-burger zoom" onclick="openNav()">
+                        <i class="bi bi-list burger"></i>
+                    </span> 
+                    <img src="images/home/Foto_4.jpg" class="d-block w-100">
+                    <div class="letras-sobre-imagen-home text-center">
+                        <table class="centrada posicion-4 mov4">
+                            <tr>
+                                <td style="text-align: center;"><b>ESENCIA</b> EMPRESARIAL</td>
+                            </tr>
+                        </table>                    
+                    </div>                    
+                </div>            
             </div>
-            <div class="carousel-item ">
-                <img src="images/home/Foto_3.jpg" class="d-block w-100">
-                <div class="letras-sobre-imagen-home posicion-3 mov3">
-                    NUESTROS <b>MAYORES OBJETIVOS.</b>
-                </div>
-                <div class="barra-sobre-imagen"></div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/home/Foto_4.jpg" class="d-block w-100">
-                <div class="letras-sobre-imagen-home text-center">
-                    <table class="centrada posicion-4 mov4">
-                        <tr>
-                            <td style="text-align: center;"><b>ESENCIA</b> EMPRESARIAL</td>
-                        </tr>
-                    </table>                    
-                </div>
-                <div class="barra-sobre-imagen"></div>
-            </div>            
-        </div>
-    </div> 
+        </div> 
+    </section>
 
-    <!-- BARRA CON LOGO SOBRE CAROUSEL -->           
-    <div class="logo-sobre-imagen">
-        <a href="index.html">
-            <img src="images/home/logo-barra.png" class="logo">        
-        </a>
-    </div>  
     <!-- FIN HOME -->
 
 
@@ -105,7 +124,8 @@
     <a name="somos"></a>
     <div class="excelencia">
         <div class="text-center pt-4 pb-4">  
-            <img src="images/home/logo.png" class="logo-excelencia "> 
+            <img src="images/home/logo.png" class="logo-excelencia"
+            data-aos="zoom-in" data-aos-offset="100" data-aos-duration="2500"> 
             <div style="padding-top: 0px;">  
                 <table class="centrada-2">
                     <tr>
@@ -137,7 +157,8 @@
                 </div> 
             </div>
             <div class="barra-sobre-imagen-excelencia" >
-                <div class="texto-promesa">
+                <div class="texto-promesa text-center"
+                data-aos="flip-up" data-aos-offset="100" data-aos-duration="1500">
                     ES UNA PROMESA QUE NOS OBLIGA A SALIR ADELANTE Y NOS HACE BUSCAR LA FORMA DE CRECER. 
                     NOS PERMITE REPENSARNOS, ESTAR EN MOVIMIENTO, NO CONFORMARNOS Y QUERER AVANZAR, IR POR M&Aacute;S.
                 </div>
@@ -161,7 +182,7 @@
             Buscamos crear valor, brindarnos con aquellos que buscan lo mismo que nosotros. Creemos<br>
             en las personas que buscan crecer, desarrollarse y hacen lo necesario para lograrlo.
         </div>
-        <div class="logos-trayectoria" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1500">
+        <div class="logos-trayectoria" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="1500">
             <a href="https://buildup.com.ar/" target="_blank">
                 <img src="images/home/logo_buildup.png" class="cada-logo zoom">
             </a>
@@ -174,7 +195,7 @@
 
     <!-- EQUIPO EJECUTIVO -->
     <a name="equipoejecutivo"></a>
-    <div class="equipoejecutivo pb-5" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1500">
+    <div class="equipoejecutivo pb-5 pt-3" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1500">
         <div class="pt-5">  
             <table class="centrada-2">
                 <tr>
@@ -182,6 +203,7 @@
                 </tr>
             </table>            
         </div>
+        <div class="p-3"></div>
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4 p-4 pt-5">
             <div class="col">
                 <div class="card equipo-card bg-dark m-3 h-100 pt-5">
@@ -242,11 +264,12 @@
                     </div>                        
                 </div>
             </div> 
-        </div>           
+        </div> 
+        <div class="p-2"></div>          
         <div class="pt-5">  
-            <div class="texto-equipo">
-                Crear, divertirnos, buscar desaf&iacute;os, nunca dejar de crecer<br>
-                es lo que le pedimos a todos los equipos del grupo.
+            <div class="texto-equipo text-center" data-aos="flip-up" data-aos-offset="100" data-aos-duration="1500">
+                CREAR, DIVERTIRNOS, BUSCAR DESAF&Iacute;OS, NUNCA DEJAR DE CRECER<BR>
+                ES LO QUE LE PEDIMOS A TODOS LOS EQUIPOS DEL GRUPO.                
             </div>         
         </div>
     </div>
@@ -254,7 +277,7 @@
 
     <!-- CONTACTO -->
     <a name="contacto"></a>
-    <div class="contacto">          
+    <div class="contacto pt-5 pb-5">          
         <div class="pt-5"> 
             <table class="centrada-2">
                 <tr>
@@ -351,7 +374,10 @@
                     <div class="col col-5"> 
                         <table >
                             <tr>
-                                <td ><img src="images/home/pie_location.png" class="pie-location"></td>
+                                <td >
+                                    <!--<img src="images/home/pie_location.png" class="pie-location">-->
+                                    <i class="bi bi-geo-alt" style="font-size: 1.8rem;"></i>&nbsp;&nbsp;&nbsp;
+                                </td>
                                 <td ><b class="pie-titulo">Direcci&oacute;n</b></td>
                             </tr>
                             <tr>
@@ -375,7 +401,9 @@
                     <div class="col col-7">
                         <table>
                             <tr>
-                                <td><img src="images/home/pie_telefono.png" class="pie-location"></td>
+                                <td><!--<img src="images/home/pie_telefono.png" class="pie-location">-->
+                                    <i class="bi bi-telephone" style="font-size: 1.8rem;"></i>&nbsp;&nbsp;&nbsp;
+                                </td>
                                 <td><b class="pie-titulo">Tel&eacute;fonos</b></td>
                             </tr>
                             <tr>
@@ -432,6 +460,7 @@
 
     function closeNav() {
       document.getElementById("mySidebar").style.display = "none";
+      
     }   
     
 </script> 

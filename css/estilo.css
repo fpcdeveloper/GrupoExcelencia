@@ -55,6 +55,7 @@ body{
   top: 3%;
   left: 3%;
   width:27%;
+  background-image: url('../images/home/logo-barra.png');
 }
 
 .logo {
@@ -68,6 +69,15 @@ body{
   letter-spacing: 1px;
 }
 
+/* tiempo entre cada slide */
+.carousel-item {
+  transition: transform 3s ease-in-out;  
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 3s;  
+}
 
 /* la excelencia que nos eleva...*/
 .posicion-1 {
@@ -79,8 +89,8 @@ body{
 
 .mov1 {
   animation-name: mov1-animation;
-  animation-duration: 3s;
-  animation: mov1-animation 3s;
+  animation-duration: 5s;
+  animation: mov1-animation 5s;
   animation-timing-function: ease-in;
 }
 
@@ -100,12 +110,12 @@ body{
 .mov2 {
   animation-name: mov2-animation;
   animation-duration: 4s;
-  animation: mov2-animation 5s;
+  animation: mov2-animation 4s;
   animation-timing-function: ease-out;
 }
 
 @keyframes mov2-animation {
-  from {top: 64%; color:transparent;}
+  from {top: 70%; color:transparent;}
   to {top: 61%; color:black;}
 }
 
@@ -120,12 +130,12 @@ body{
 .mov3 {
   animation-name: mov3-animation;
   animation-duration: 4s;
-  animation: mov3-animation 5s;
+  animation: mov3-animation 4s;
   animation-timing-function: ease-out;
 }
 
 @keyframes mov3-animation {
-  from {top: 45%; color:transparent;}
+  from {top: 40%; color:transparent;}
   to {top: 50%; color:black;}
 }
 
@@ -138,8 +148,8 @@ body{
 
 .mov4 {
   animation-name: mov4-animation;
-  animation-duration: 3s;
-  animation: mov4-animation 3s;
+  animation-duration: 8s;
+  animation: mov4-animation 8s;
   animation-timing-function: ease-in;
 }
 
@@ -156,13 +166,13 @@ table.centrada {
 }
 
 .sidebar {
-  width: 350px;
+  width: 40%;
   font-family: 'Bellota-Regular', sans-serif ;
-  opacity: 0.9;
+  opacity: 1;
   display:none; 
   padding-top:120px; 
   right:0; 
-  z-index:2
+  z-index:2;  
 }
 
 .sidebar-burger {
@@ -184,7 +194,7 @@ table.centrada {
   background-color: transparent !important;
   color:#937f6b !important;  
   padding-top: 18px;  
-  padding-left: 15px;
+  padding-right: 25px;  
 }
 
 .sidebar-flecha:hover {
@@ -192,7 +202,7 @@ table.centrada {
 }
 
 .flecha-sidebar {    
-  background: linear-gradient(90deg, rgb(39, 39, 39), white, rgb(39, 39, 39));
+  background: linear-gradient(90deg, white, white, white);
   font-size: 2.8rem;    
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -200,7 +210,7 @@ table.centrada {
 }
 
 .flecha-sidebar:hover {    
-  background: linear-gradient(45deg, rgb(39, 39, 39), white, rgb(39, 39, 39));   
+  background: linear-gradient(90deg, white, white, white);
   font-size: 2.8rem;    
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -208,7 +218,7 @@ table.centrada {
 }
 
 .burger {        
-  background: linear-gradient(90deg, rgb(39, 39, 39), white, rgb(39, 39, 39));    
+  background: linear-gradient(90deg, white, white, white);    
   font-size: 4rem;    
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -216,7 +226,7 @@ table.centrada {
 }
 
 .burger:hover {       
-  background: linear-gradient(45deg, rgb(39, 39, 39), white, rgb(39, 39, 39));    
+  background: linear-gradient(45deg, white, white, white);    
   font-size: 4rem;    
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -225,28 +235,22 @@ table.centrada {
     
 .sidebar-item {
   font-family: 'Bellota-Regular', sans-serif ;
-  font-size: 1rem;  
+  font-size: 1.1rem;  
+  margin-top: 20px;
+  transition: 0.8s;
 }
 
-.sidebar-item::after{
-  font-family: 'Bellota-Regular', sans-serif ;  
-  display:block;
-  content: '';
-  border-bottom: solid 2px #c0ad98;  
-  transform: scaleX(0);  
-  transition: transform 800ms ease-in-out;
-}
-
-.sidebar-item:hover:after {
-  transform: scaleX(1);
-}
 
 .sidebar-item:hover {
   font-family: 'Bellota-Regular', sans-serif ;  
   font-weight: bold;
-  color:#c0ad98 !important;
-  background-color:#000!important;
+  color:#000 !important;
+  /*background-color:#c0ad98!important;*/
+  background-image: linear-gradient(135deg, #c0ad98,#000408);
+  background-size: 100%;
+  /*transition: transform 800ms ease-in-out;*/
 }
+
 
 .excelencia {
   background-color: #242c34;
@@ -281,12 +285,13 @@ table.centrada-2 {
 .texto-promesa {
   color:#ffffff;
   font-family: 'Bellota-Light', sans-serif ;
+  font-size: 1rem;
   padding-left: 15%;
   padding-right: 15%;
   line-height: 2;
   letter-spacing: 1px;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 2%;  
 }
 
 .texto-buscamos-1 {
@@ -356,6 +361,15 @@ table.centrada-2 {
   background-image: linear-gradient(135deg, #242c34,#36424e);
 }
 
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: #ffffff;
+	--c2: #242c34;
+}
+
 .equipo-card {
   text-align:center; 
   color:gray; 
@@ -366,16 +380,68 @@ table.centrada-2 {
 .equipo-card:hover {
   color:#ffffff;
   border: 5px solid;
-  border-image: linear-gradient(135deg, #242c34,white ) 1;
+  /*  border-image: linear-gradient(135deg, #242c34,white ) 1;  */
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear  ; 
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
 }
 
 .equipo-card-nombre {    
   font-size: 1.3rem;
 }
 
+.equipo-card-nombre::after{
+  font-family: 'Bellota-Regular', sans-serif ;  
+  display:block;
+  content: '';
+  border-bottom: solid 2px #c0ad98; 
+  transform: scaleX(0);  
+  transition: transform 800ms ease-in-out;
+}
+
+.equipo-card-nombre:hover:after {
+  transform: scaleX(0.8);
+}
+
 .equipo-card-cargo {    
   font-size: 1.1rem;
 }
+
+/*.equipo-card-cargo::after{
+  font-family: 'Bellota-Regular', sans-serif ;  
+  display:block;
+  content: '';
+  border-bottom: solid 2px #c0ad98; 
+  transform: scaleX(0);  
+  transition: transform 800ms ease-in-out;
+}
+
+.equipo-card-cargo:hover:after {
+  transform: scaleX(0.6);
+}*/
 
 .equipo-card-texto {    
   font-size:1.1rem; 
@@ -392,9 +458,6 @@ table.centrada-2 {
   /*border: 2px solid #242c34;;*/
 }
 
-/*.equipo-card-circulo:hover {    
-  border: 2px solid whitesmoke;    
-}*/
 
 .equipo-foto-1 {
   background-image: url(../images/home/imgSebastianVillalba.png);
@@ -421,8 +484,8 @@ table.centrada-2 {
   padding-right: 10%;
   line-height: 2;
   letter-spacing: 2px;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .contacto {
@@ -534,6 +597,7 @@ table.centrada-2 {
 
 
 
+
 /*----------------------------------------------------------------------------------------------------*/
 
 
@@ -560,7 +624,7 @@ table.centrada-2 {
     }
 
     .sidebar {
-      width: 350px;
+      width: 50%;
     }
     
     .sidebar-burger {
@@ -699,6 +763,14 @@ table.centrada-2 {
       padding-bottom: 1%;
     }
 
+    .equipo-card-nombre:hover:after {
+      transform: scaleX(0.6);
+    }
+
+    /*.equipo-card-cargo:hover:after {
+      transform: scaleX(0.3);
+    }*/
+
     .linea-iconos-contacto {
       position: relative; 
       display: inline-block;
@@ -769,6 +841,13 @@ table.centrada-2 {
       font-size: 6rem; 
     }
 
+    .sidebar-flecha {
+      background-color: transparent !important;
+      color:#937f6b !important;  
+      padding-top: 25px;  
+      padding-right: 60px;  
+    }
+
     .logo-sobre-imagen {
       position: absolute;
       top: 1%;
@@ -782,7 +861,7 @@ table.centrada-2 {
     }
 
     .sidebar {
-      width: 450px;
+      width: 45%;
       padding-top:220px;
     }
 
@@ -795,7 +874,8 @@ table.centrada-2 {
     }
 
     .sidebar-item {
-      font-size: 1.6rem;  
+      font-size: 1.7rem;  
+      margin-top: 40px;
     }
 
     .letras-sobre-imagen-home {      
@@ -881,6 +961,13 @@ table.centrada-2 {
       font-size: 1.7rem;
     }
 
+    .equipo-card-nombre:hover:after {
+      transform: scaleX(0.5);
+    }
+
+    /*.equipo-card-cargo:hover:after {
+      transform: scaleX(0.4);
+    }*/
         
     .icono-contacto {
       width:40px;
